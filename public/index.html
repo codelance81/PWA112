@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/css/app.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="holder.js"></script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Intl.~locale.en"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://qsstage.morningstar.com/lib/morningstar-components-loader-1.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Course</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-log-in"></span> Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal Calendar-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Calendar</h4>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=vur11l1qjbjtqt2en6su92nj2o%40group.calendar.google.com&amp;color=%23333333&amp;ctz=America%2FPhoenix"
+            style="border:solid 1px #777" width="568" height="600" frameborder="0" scrolling="no"></iframe>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- The Modal ALERTS -->
+  <div class="modal" id="myModal2">
+    <div class="modal-dialog-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ALERTS</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <h2>Alerts</h2>
+
+            <table class="table table-dark table-hover">
+              <thead class="thead-dark">
+                <tr>
+                  <th>SYSMBOL</th>
+                  <th>PRICE</th>
+                  <th>DATE</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="myModal3">
+    <div class="modal-dialog-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ALERTS</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+
+          </div>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+
+    <div class="col-md-8 text-left">
+      <h1>Welcome</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      <h3>Test</h3>
+      <p>Lorem ipsum...</p>
+    </div>
+  </div>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <p>Enter dates and Ticker Sysmbol</P>
+      <div class='col-md-4'>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker6'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <div class="form-group">
+          <div class='input-group date' id='datetimepicker7'>
+            <input type='text' class="form-control" />
+            <span class="input-group-addon">
+              <span class="glyphicon glyphicon-calendar"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <div class="form-group">
+          <div class='input-group date' id='tickerSymbol'>
+            <input type='text' class="form-control" />
+            <span class="icon-input-btn">
+              <span class="glyphicon glyphicon-search"></span>
+              <input type="submit" class="btn btn-primary btn-xs" value="Search">
+            </span>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Nvision</h1>
+        <p>data from spreadsheet displayed here 5 year pattern Display from input above</p>
+      </div>
+    </div>
+    </div>
+  <!--price dipaly area-->
+  <div class="row">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail1 text-center">
+            <img src="holder.js/242X200">
+            <div class="caption">
+              <h3>stock price</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail2 text-center">
+            <img src="holder.js/242X200">
+            <div class="caption">
+              <h3>options price</h3>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail3 text-center">
+            <img src="holder.js/242X200">
+            <div class="caption">
+              <h3>Thumbnail label3</h3>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--section-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>Jumbo1</h1>
+      <p>data from spreadsheet displayed here 5 year pattern.</p>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- button section-->
+  <div class="container-lg"id="component-container">
+    <div class="well">
+      <ul class="list-group">
+        <li class="list-group-item">morngstar options chain data Here</li>
+        <li class="list-group-item">morningstar options api </li>
+        <li class="list-group-item">check options pricing</li>
+        <li class="list-group-item">First item</li>
+        <li class="list-group-item">Second item</li>
+        <li class="list-group-item">Third item</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <div class="well">
+      <div class="btn-group btn-group-center">
+      </div class="btn-group">
+      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
+        <a href="myModal1"></a>Calender</button>
+      <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal2">
+        <a href="#">Alerts
+          <span class="badge">10</span>
+        </a>
+        <br>
+      </button>
+      <button type="button" class="btn btn-info btn-sm">Open Modal</button>
+    </div>
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
